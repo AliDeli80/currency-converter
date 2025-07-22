@@ -45,28 +45,16 @@ src/
 └── index.js
 ```
 
-## 🚀 Getting Started
+## 📦 Getting Started
 
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/AliDeli80/currency-converter.git
-cd currency-converter
-```
-
-### 2. Install dependencies
+Clone the repository and start the development server:
 
 ```bash
+git clone https://github.com/AliDeli80/usepopcorn.git
+cd usepopcorn
 npm install
-```
-
-### 3. Run the app
-
-```bash
 npm start
 ```
-
-The app will be running at: **http://localhost:3000**
 
 ## 🧪 Optional Improvements
 - Add dark/light mode
