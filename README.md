@@ -16,7 +16,7 @@ A simple and responsive currency converter app built with **React**, using real-
 
 - Accessible and user-friendly UI.
 
-##  Usage
+## 🔄 Usage
 
 1- Enter an amount to convert.
 
@@ -32,6 +32,18 @@ A simple and responsive currency converter app built with **React**, using real-
 - CSS
 - Frankfurter API
 
+## 📁 Folder Structure
+```plaintext
+src/
+├── Components/
+│   ├── Amount.js
+│   ├── Button.js
+│   ├── ConvertSelect.js
+│   ├── Loader.js
+│   └── Result.js
+├── App.js
+└── index.js
+```
 
 ## 🚀 Getting Started
 
