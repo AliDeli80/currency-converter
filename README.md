@@ -50,8 +50,8 @@ src/
 Clone the repository and start the development server:
 
 ```bash
-git clone https://github.com/AliDeli80/usepopcorn.git
-cd usepopcorn
+git clone https://github.com/AliDeli80/currency-converter.git
+cd currency-converter
 npm install
 npm start
 ```
