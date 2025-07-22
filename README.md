@@ -2,8 +2,6 @@
 
 A simple and responsive currency converter app built with **React**, using real-time exchange rates from the [Frankfurter API](https://www.frankfurter.app/).
 
----
-
 ## ✨ Features
 
 - Convert any amount from one currency to another
@@ -12,16 +10,11 @@ A simple and responsive currency converter app built with **React**, using real-
 - Input validation for amount
 - Responsive and clean UI built with CSS
 
----
-
 ## 🛠️ Technologies Used
 
 - React
 - CSS
 - Frankfurter API
-
-
----
 
 ## 🚀 Getting Started
 
