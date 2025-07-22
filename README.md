@@ -56,4 +56,4 @@ The app will be running at: **http://localhost:3000**
 This project is licensed under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
-AliDeli80
+Ali Delgoshaei
