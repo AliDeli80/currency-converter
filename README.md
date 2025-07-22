@@ -4,17 +4,34 @@ A simple and responsive currency converter app built with **React**, using real-
 
 ## ✨ Features
 
-- Convert any amount from one currency to another
-- Real-time exchange rates using Frankfurter API
-- Loading indicator during conversion
-- Input validation for amount
-- Responsive and clean UI built with CSS
+- Convert currency amounts in real-time.
+
+- Supports multiple currencies: USD, EUR, CAD, INR.
+
+- Input validation and error handling.
+
+- Loading indicator while fetching conversion rates.
+
+- Keyboard support: Press Enter to trigger conversion.
+
+- Accessible and user-friendly UI.
+
+##  Usage
+
+1- Enter an amount to convert.
+
+2- Select the source currency and the target currency.
+
+3- Click the Convert button or press Enter.
+
+4- View the converted amount.
 
 ## 🛠️ Technologies Used
 
 - React
 - CSS
 - Frankfurter API
+
 
 ## 🚀 Getting Started
 
