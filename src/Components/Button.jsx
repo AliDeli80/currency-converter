@@ -6,7 +6,9 @@ export default function Button({ handleConvert }) {
 
   return (
     <div className="btn">
-      <button onClick={handleConvert}>Convert</button>
+      <button type="button" onClick={handleConvert}>
+        Convert
+      </button>
     </div>
   );
 }

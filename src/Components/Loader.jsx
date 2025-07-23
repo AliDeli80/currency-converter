@@ -1,5 +1,8 @@
-import React from "react";
-
 export default function Loader() {
-  return <p className="loader">Loading...</p>;
+  return (
+    <div className="loader">
+      <div className="spinner"></div>
+      <p>Loading...</p>
+    </div>
+  );
 }

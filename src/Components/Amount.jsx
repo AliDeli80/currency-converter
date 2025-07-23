@@ -18,6 +18,7 @@ export default function Amount({ amount, setAmount }) {
         name="amount"
         id="amount"
         value={amount}
+        min={0}
         onChange={(e) => setAmount(e.target.value)}
         ref={inputElement}
       />

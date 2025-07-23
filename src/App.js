@@ -7,38 +7,34 @@ import Loader from "./Components/Loader";
 
 export default function App() {
   const [amount, setAmount] = useState("");
-  const [currency, setCurrency] = useState("result");
+  const [currency, setCurrency] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("CAD");
 
   const handleConvert = async function convert() {
-    const controller = new AbortController();
+    if (amount <= 0) {
+      alert("Amount must be greater than zero");
+      return;
+    }
 
-    if (!amount || isNaN(amount)) {
-      alert("Please enter a valid amount");
+    if (fromCurrency === toCurrency) {
+      setCurrency(amount);
       return;
     }
 
     try {
       setIsLoading(true);
       const res = await fetch(
-        `https://api.frankfurter.app/latest?amount=${amount}&from=${fromCurrency}&to=${toCurrency}`,
-        { signal: controller.signal }
+        `https://api.frankfurter.app/latest?amount=${amount}&from=${fromCurrency}&to=${toCurrency}`
       );
       const data = await res.json();
-      setCurrency(data.rates[toCurrency]);
+      setCurrency(Number(data.rates[toCurrency]).toFixed(2));
     } catch (error) {
-      if (error.name !== "AbortError") {
-        console.error("Fetch error:", error);
-      }
+      console.error("Fetch error:", error);
     } finally {
       setIsLoading(false);
     }
-
-    if (fromCurrency === toCurrency) return setCurrency(amount);
-
-    setIsLoading(false);
   };
 
   return (
@@ -59,7 +55,7 @@ export default function App() {
         {isLoading && <Loader />}
         {!isLoading && <Button handleConvert={handleConvert} />}
 
-        <Result currency={currency} />
+        {currency && <Result currency={currency} />}
       </div>
     </div>
   );

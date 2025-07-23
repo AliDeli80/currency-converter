@@ -6,34 +6,38 @@ export default function ConvertSelect({
   onChangeToCurrency,
   toCurrency,
 }) {
+  const currencies = ["USD", "EUR", "CAD", "INR"];
+
   return (
     <div className="convert-select">
       <div className="from-To-select">
-        <label htmlFor="from">from</label>
+        <label htmlFor="from">From</label>
         <select
           name="from"
           id="from"
           value={fromCurrency}
           onChange={(e) => onChangeFromCurrency(e.target.value)}
         >
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="CAD">CAD</option>
-          <option value="INR">INR</option>
+          {currencies.map((cur) => (
+            <option key={cur} value={cur} disabled={cur === toCurrency}>
+              {cur}
+            </option>
+          ))}
         </select>
       </div>
       <div className="from-To-select">
-        <label htmlFor="to">to</label>
+        <label htmlFor="to">To</label>
         <select
           name="to"
           id="to"
           value={toCurrency}
           onChange={(e) => onChangeToCurrency(e.target.value)}
         >
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="CAD">CAD</option>
-          <option value="INR">INR</option>
+          {currencies.map((cur) => (
+            <option key={cur} value={cur} disabled={cur === fromCurrency}>
+              {cur}
+            </option>
+          ))}
         </select>
       </div>
     </div>
