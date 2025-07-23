@@ -53,7 +53,7 @@ The app will be running at: **http://localhost:3000**
 - Add unit tests (Jest + RTL)
 
 ## 📄 License
-
+This project is licensed under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
-AliDeli80
+Ali Delgoshaei
