@@ -18,11 +18,6 @@ export default function App() {
       return;
     }
 
-    if (fromCurrency === toCurrency) {
-      setCurrency(amount);
-      return;
-    }
-
     try {
       setIsLoading(true);
       const res = await fetch(
