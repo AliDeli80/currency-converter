@@ -56,6 +56,11 @@ npm install
 npm start
 ```
 
+## 📸 Screenshots
+
+<img width="1920" height="864" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/f3006ec8-2602-42fd-8289-42ffd86b9010" />
+
+
 ## 🧪 Optional Improvements
 - Add dark/light mode
 
